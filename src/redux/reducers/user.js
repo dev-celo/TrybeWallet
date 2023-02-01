@@ -10,7 +10,7 @@ const user = (state = INITIAL_STATE, action) => {
   switch (action.type) {
   case LOGIN_FORM_SUBMIT:
     return {
-      ...state, user: { ...action.payload },
+      ...state, ...action.payload,
     };
   default:
     return state;
