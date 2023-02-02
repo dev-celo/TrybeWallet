@@ -33,17 +33,15 @@ const requestFailed = (error) => ({
 });
 
 // eslint-disable-next-line arrow-body-style
-const fetchCurrency = () => {
-  return (dispatch) => {
-    dispatch(requestStarted());
-    fetch('https://economia.awesomeapi.com.br/json/all')
-      .then((response) => response.json())
-      .then((data) => {
-        const currency = Object.keys(data).filter((key) => key !== 'USDT');
-        dispatch(requestSuccessful(currency));
-      })
-      .catch((error) => requestFailed(error));
-  };
+const fetchCurrency = () => (dispatch) => {
+  dispatch(requestStarted());
+  fetch('https://economia.awesomeapi.com.br/json/all')
+    .then((response) => response.json())
+    .then((data) => {
+      const currency = Object.keys(data).filter((key) => key !== 'USDT');
+      dispatch(requestSuccessful(currency));
+    })
+    .catch((error) => requestFailed(error));
 };
 
 export { submitPersonalProfie, submitprofessionalProfie, fetchCurrency };
