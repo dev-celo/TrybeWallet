@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { submitPersonalProfie } from '../redux/actions';
+import { fetchCurrency, submitPersonalProfie } from '../redux/actions';
 
 class Login extends React.Component {
   constructor() {
@@ -60,6 +60,7 @@ class Login extends React.Component {
           disabled={ isDisable }
           onClick={ () => {
             dispatch(submitPersonalProfie({ email, password }));
+            dispatch(fetchCurrency());
             return history.push('/carteira');
           } }
         >
