@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 class Header extends Component {
   render() {
     const { email } = this.props;
-    console.log(email);
     return (
       <div>
         <span data-testid="email-field">{email}</span>

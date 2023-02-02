@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 class WalletForm extends Component {
   render() {
     const { currencies } = this.props;
-    console.log(currencies);
     return (
       <form>
         <input
@@ -50,7 +49,7 @@ class WalletForm extends Component {
 }
 
 WalletForm.propTypes = {
-  currencies: PropTypes.arrayOf().isRequired,
+  currencies: PropTypes.arrayOf.isRequired,
 };
 
 const mapStateToProps = (state) => ({
