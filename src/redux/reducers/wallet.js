@@ -1,34 +1,40 @@
 // Esse reducer será responsável por tratar o todas as informações relacionadas as despesas
-import { REQUEST_SUCCESSFUL, REQUEST_STARTED } from '../actions';
+import {
+  CURRENCY_FORM_SUBMIT,
+  REQUEST_SUCCESSFUL,
+  REQUEST_STARTED,
+} from '../actions';
 
 const INITIAL_STATE = {
   currencies: [], // array de string
-  expenses: [{
-    id: 0,
-    value: '',
-    currency: '',
-    method: '',
-    tag: '',
-    description: '',
-    exchangeRates: '',
-  }], // array de objetos, com cada objeto tendo as chaves id, value, currency, method, tag, description e exchangeRates
+  expenses: [], // array de objetos, com cada objeto tendo as chaves id, value, currency, method, tag, description e exchangeRates
   editor: false, // valor booleano que indica de uma despesa está sendo editada
   idToEdit: 0, // valor numérico que armazena o id da despesa que esta sendo editada
 };
 
 const wallet = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  /* case CURRENCY_FORM_SUBMIT:
+  case CURRENCY_FORM_SUBMIT:
     return {
-      ...state, wallet: { ...action.payload },
-    }; */
+      ...state,
+      expenses: [
+        ...state.expenses,
+        {
+          id: state.expenses.length,
+          ...action.payload,
+          exchangeRates: state.exchangeRates,
+        },
+      ],
+    };
   case REQUEST_STARTED:
     return {
       ...state,
     };
   case REQUEST_SUCCESSFUL:
     return {
-      ...state, currencies: action.payload,
+      ...state,
+      currencies: Object.keys(action.payload).filter((key) => key !== 'USDT'),
+      exchangeRates: action.payload,
     };
   default:
     return state;

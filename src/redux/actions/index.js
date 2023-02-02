@@ -1,6 +1,7 @@
 // Coloque aqui suas actions
 export const LOGIN_FORM_SUBMIT = 'PERSONAL_FORM_SUBMIT';
 export const CURRENCY_FORM_SUBMIT = 'PROFESSIONAL_FORM_SUBMIT';
+export const REQUEST_EXCHANGE = 'REQUEST_EXCHANGE';
 
 export const REQUEST_STARTED = 'REQUEST_STARTED';
 export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
@@ -38,8 +39,7 @@ const fetchCurrency = () => (dispatch) => {
   fetch('https://economia.awesomeapi.com.br/json/all')
     .then((response) => response.json())
     .then((data) => {
-      const currency = Object.keys(data).filter((key) => key !== 'USDT');
-      dispatch(requestSuccessful(currency));
+      dispatch(requestSuccessful(data));
     })
     .catch((error) => requestFailed(error));
 };
