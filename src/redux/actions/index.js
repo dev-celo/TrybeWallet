@@ -2,6 +2,7 @@
 export const LOGIN_FORM_SUBMIT = 'PERSONAL_FORM_SUBMIT';
 export const CURRENCY_FORM_SUBMIT = 'PROFESSIONAL_FORM_SUBMIT';
 export const REQUEST_EXCHANGE = 'REQUEST_EXCHANGE';
+export const DELETE = 'DELETE';
 
 export const REQUEST_STARTED = 'REQUEST_STARTED';
 export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
@@ -15,6 +16,11 @@ const submitPersonalProfie = (email) => ({
 const submitprofessionalProfie = (currency) => ({
   type: CURRENCY_FORM_SUBMIT,
   payload: currency,
+});
+
+const deleteCoast = (idValue) => ({
+  type: DELETE,
+  payload: idValue,
 });
 
 const requestStarted = () => ({
@@ -44,4 +50,4 @@ const fetchCurrency = () => (dispatch) => {
     .catch((error) => requestFailed(error));
 };
 
-export { submitPersonalProfie, submitprofessionalProfie, fetchCurrency };
+export { submitPersonalProfie, submitprofessionalProfie, fetchCurrency, deleteCoast };

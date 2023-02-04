@@ -3,6 +3,7 @@ import {
   CURRENCY_FORM_SUBMIT,
   REQUEST_SUCCESSFUL,
   REQUEST_STARTED,
+  DELETE,
 } from '../actions';
 
 const INITIAL_STATE = {
@@ -35,6 +36,11 @@ const wallet = (state = INITIAL_STATE, action) => {
       ...state,
       currencies: Object.keys(action.payload).filter((key) => key !== 'USDT'),
       exchangeRates: action.payload,
+    };
+  case DELETE:
+    return {
+      ...state,
+      expenses: state.expenses.filter((expense) => expense.id !== action.payload),
     };
   default:
     return state;
