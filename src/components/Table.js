@@ -26,8 +26,8 @@ class Table extends Component {
           <tbody>
             {
               expenses
-              && expenses.map((expense, index) => (
-                <tr key={ index }>
+              && expenses.map((expense) => (
+                <tr key={ expense.id }>
                   <td>{ expense.description }</td>
                   <td>{ expense.tag }</td>
                   <td>{ expense.method }</td>
@@ -43,7 +43,7 @@ class Table extends Component {
                   <td>Real</td>
                   <td>
                     <button
-                      id={ `button-${expense.id}` }
+                      /* id={ `button-${expense.id}` } */
                       data-testid="delete-btn"
                       onClick={ () => {
                         dispatch(deleteCoast(expense.id));

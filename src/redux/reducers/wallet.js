@@ -41,6 +41,7 @@ const wallet = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       expenses: state.expenses.filter((expense) => expense.id !== action.payload),
+      //  expenses: state.expenses.splice(action.payload, 1),
     };
   default:
     return state;
