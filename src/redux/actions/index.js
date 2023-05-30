@@ -1,45 +1,21 @@
-// Coloque aqui suas actions
+// Ações de login
 export const LOGIN_FORM_SUBMIT = 'PERSONAL_FORM_SUBMIT';
-export const CURRENCY_FORM_SUBMIT = 'PROFESSIONAL_FORM_SUBMIT';
-export const REQUEST_EXCHANGE = 'REQUEST_EXCHANGE';
-export const DELETE = 'DELETE';
-
-export const REQUEST_STARTED = 'REQUEST_STARTED';
-export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
-export const REQUEST_FAILED = 'REQUEST_FAILED';
 
 const submitPersonalProfie = (email) => ({
   type: LOGIN_FORM_SUBMIT,
   payload: email,
 });
 
+// Ações de Moeda
+
+export const CURRENCY_FORM_SUBMIT = 'PROFESSIONAL_FORM_SUBMIT';
+export const REQUEST_EXCHANGE = 'REQUEST_EXCHANGE';
+
 const submitprofessionalProfie = (currency) => ({
   type: CURRENCY_FORM_SUBMIT,
   payload: currency,
 });
 
-const deleteCoast = (idValue) => ({
-  type: DELETE,
-  payload: idValue,
-});
-
-const requestStarted = () => ({
-  type: REQUEST_STARTED,
-});
-
-const requestSuccessful = (data) => (
-  {
-    type: REQUEST_SUCCESSFUL,
-    payload: data,
-  }
-);
-
-const requestFailed = (error) => ({
-  type: REQUEST_SUCCESSFUL,
-  payload: error,
-});
-
-// eslint-disable-next-line arrow-body-style
 const fetchCurrency = () => (dispatch) => {
   dispatch(requestStarted());
   fetch('https://economia.awesomeapi.com.br/json/all')
@@ -50,4 +26,43 @@ const fetchCurrency = () => (dispatch) => {
     .catch((error) => requestFailed(error));
 };
 
-export { submitPersonalProfie, submitprofessionalProfie, fetchCurrency, deleteCoast };
+// Outras ações
+export const DELETE = 'DELETE';
+
+const deleteCoast = (idValue) => ({
+  type: DELETE,
+  payload: idValue,
+});
+
+export const REQUEST_STARTED = 'REQUEST_STARTED';
+
+const requestStarted = () => ({
+  type: REQUEST_STARTED,
+});
+
+
+export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
+
+const requestSuccessful = (data) => (
+  {
+    type: REQUEST_SUCCESSFUL,
+    payload: data,
+  }
+);
+
+export const REQUEST_FAILED = 'REQUEST_FAILED';
+
+const requestFailed = (error) => ({
+  type: REQUEST_SUCCESSFUL,
+  payload: error,
+});
+
+export {
+  submitPersonalProfie,
+  submitprofessionalProfie,
+  fetchCurrency,
+  deleteCoast,
+  requestStarted,
+  requestSuccessful,
+  requestFailed
+};
