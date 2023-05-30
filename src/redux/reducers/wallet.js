@@ -27,16 +27,19 @@ const wallet = (state = INITIAL_STATE, action) => {
         },
       ],
     };
+
   case REQUEST_STARTED:
     return {
       ...state,
     };
+
   case REQUEST_SUCCESSFUL:
     return {
       ...state,
       currencies: Object.keys(action.payload).filter((key) => key !== 'USDT'),
       exchangeRates: action.payload,
     };
+
   case DELETE:
     return {
       ...state,
