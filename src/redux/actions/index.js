@@ -16,16 +16,6 @@ const submitprofessionalProfie = (currency) => ({
   payload: currency,
 });
 
-const fetchCurrency = () => (dispatch) => {
-  dispatch(requestStarted());
-  fetch('https://economia.awesomeapi.com.br/json/all')
-    .then((response) => response.json())
-    .then((data) => {
-      dispatch(requestSuccessful(data));
-    })
-    .catch((error) => requestFailed(error));
-};
-
 // Outras ações
 export const DELETE = 'DELETE';
 
@@ -39,7 +29,6 @@ export const REQUEST_STARTED = 'REQUEST_STARTED';
 const requestStarted = () => ({
   type: REQUEST_STARTED,
 });
-
 
 export const REQUEST_SUCCESSFUL = 'REQUEST_SUCCESSFUL';
 
@@ -57,6 +46,16 @@ const requestFailed = (error) => ({
   payload: error,
 });
 
+const fetchCurrency = () => (dispatch) => {
+  dispatch(requestStarted());
+  fetch('https://economia.awesomeapi.com.br/json/all')
+    .then((response) => response.json())
+    .then((data) => {
+      dispatch(requestSuccessful(data));
+    })
+    .catch((error) => requestFailed(error));
+};
+
 export {
   submitPersonalProfie,
   submitprofessionalProfie,
@@ -64,5 +63,5 @@ export {
   deleteCoast,
   requestStarted,
   requestSuccessful,
-  requestFailed
+  requestFailed,
 };
