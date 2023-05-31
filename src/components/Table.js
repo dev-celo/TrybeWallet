@@ -64,9 +64,18 @@ class Table extends Component {
 
 Table.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  expenses: PropTypes.arrayOf().isRequired,
+  expenses: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      tag: PropTypes.string.isRequired,
+      method: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
+      exchangeRates: PropTypes.arrayOf.isRequired,
+    }),
+  ).isRequired,
 };
-
 const mapStateToProps = (state) => ({
   ...state.wallet,
 });
