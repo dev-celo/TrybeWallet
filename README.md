@@ -18,8 +18,8 @@ git clone https://github.com/dev-celo/TrybeWallet.git<p>
 <p>Acesse o diretório do projeto:
 cd TrybeWallet<p>
 
-<p>🔧 Instale as dependências do projeto<p>:
-npm install
+<p>🔧 Instale as dependências do projeto:
+npm install<p>
 
 <p>Inicie a aplicação:
 
