@@ -1,6 +1,6 @@
 # TrybeWallet
 
-## TrybeWallet é um projeto de uma carteira virtual desenvolvida como parte do currículo do curso de desenvolvimento web da Trybe. Esta aplicação permite que os usuários acompanhem suas transações financeiras e mantenham um registro de seus gastos e ganhos.
+### TrybeWallet é um projeto de uma carteira virtual desenvolvida como parte do currículo do curso de desenvolvimento web da Trybe. Esta aplicação permite que os usuários acompanhem suas transações financeiras e mantenham um registro de seus gastos e ganhos. Aplicação tendo um diferencial o uso do redux em react para gerenciar o estado da aplicação
 
 ### Funcionalidades
 <p>Registro de transações: Os usuários podem adicionar suas transações financeiras, especificando o tipo (entrada ou saída), a descrição e o valor.<p>
@@ -18,8 +18,8 @@ git clone https://github.com/dev-celo/TrybeWallet.git<p>
 <p>Acesse o diretório do projeto:
 cd TrybeWallet<p>
 
-<p>🔧 Instale as dependências do projeto<p>:
-npm install
+<p>🔧 Instale as dependências do projeto:
+npm install<p>
 
 <p>Inicie a aplicação:
 
