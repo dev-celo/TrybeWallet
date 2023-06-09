@@ -12,24 +12,24 @@
 <p>Conversão de moedas: A TrybeWallet possui uma funcionalidade que permite converter valores entre diferentes moedas. As taxas de câmbio são obtidas de uma API externa.<p>
 
 ### Como usar
-`📋 Clone este repositório para o seu computador`:
+<p>📋 Clone este repositório para o seu computador<p>:
 git clone https://github.com/dev-celo/TrybeWallet.git
 
-`Acesse o diretório do projeto`:
+<p>Acesse o diretório do projeto<p>:
 cd TrybeWallet
 
-`🔧 Instale as dependências do projeto`:
+<p>🔧 Instale as dependências do projeto<p>:
 npm install
 
-`Inicie a aplicação`:
+<p>Inicie a aplicação<p>:
 
 npm start
 
-`Abra seu navegador e acesse o endereço`:
+<p>Abra seu navegador e acesse o endereço<p>:
 
 http://localhost:3000
 
-`🛠️ Construído com`
+<p>🛠️ Construído com<p>
 
 <p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p<p>>
 <p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p<p>>
@@ -44,9 +44,9 @@ API de Conversão de Moedas: `Link Building`
 Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga as etapas abaixo:
 
 Fork este repositório.
-`Crie uma branch para a sua contribuição`: git checkout -b minha-contribuicao.
-`Faça as alterações desejadas e faça commit das mesmas`: git commit -m 'Minha contribuição'.
-`Envie as alterações para o repositório remoto`: git push origin minha-contribuicao.
+<p>Crie uma branch para a sua contribuição<p>: git checkout -b minha-contribuicao.
+<p>Faça as alterações desejadas e faça commit das mesmas<p>: git commit -m 'Minha contribuição'.
+<p>Envie as alterações para o repositório remoto<p>: git push origin minha-contribuicao.
 Abra um pull request no repositório original.
 
 Licença
@@ -55,10 +55,10 @@ Este projeto está licenciado sob a MIT License.
 ### ✒️ Contato
 Se você tiver alguma dúvida ou sugestão, entre em contato com o desenvolvedor:
 
-Nome: Marcelo Silva
-Email: marcelohenrique.backend@gmail.com
-github: https://github.com/dev-celo
-linkedin: https://www.linkedin.com/in/devcelo/
+<p>Nome: Marcelo Silva<p>
+<p>Email: marcelohenrique.backend@gmail.com<p>
+<p>github: https://github.com/dev-celo<p>
+<p>linkedin: https://www.linkedin.com/in/devcelo/<p>
 
 ### Agradecimentos
 Gostaríamos de expressar minha profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
