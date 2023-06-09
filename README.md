@@ -12,30 +12,30 @@
 <p>Conversão de moedas: A TrybeWallet possui uma funcionalidade que permite converter valores entre diferentes moedas. As taxas de câmbio são obtidas de uma API externa.<p>
 
 ### Como usar
-<p>📋 Clone este repositório para o seu computador<p>:
-git clone https://github.com/dev-celo/TrybeWallet.git
+<p>📋 Clone este repositório para o seu computador:
+git clone https://github.com/dev-celo/TrybeWallet.git<p>
 
-<p>Acesse o diretório do projeto<p>:
-cd TrybeWallet
+<p>Acesse o diretório do projeto:
+cd TrybeWallet<p>
 
 <p>🔧 Instale as dependências do projeto<p>:
 npm install
 
-<p>Inicie a aplicação<p>:
+<p>Inicie a aplicação:
 
-npm start
+npm start<p>
 
-<p>Abra seu navegador e acesse o endereço<p>:
+<p>Abra seu navegador e acesse o endereço:
 
-http://localhost:3000
+http://localhost:3000<p>
 
 <p>🛠️ Construído com<p>
 
-<p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p<p>>
-<p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p<p>>
-<p>React Router: Uma biblioteca para gerenciamento de rotas em aplicações React.<p<p>>
-Styled Components: Uma biblioteca para estilizar componentes React com <p<p>>CSS-in-JS.<p<p>>
-<p>Axios: Uma biblioteca para fazer requisições HTTP.<p<p>>
+<p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p>
+<p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p>
+<p>React Router: Uma biblioteca para gerenciamento de rotas em aplicações React.<p>
+Styled Components: Uma biblioteca para estilizar componentes React com CSS-in-JS.<p>
+<p>Axios: Uma biblioteca para fazer requisições HTTP.<p>
 
 
 API de Conversão de Moedas: `Link Building`
@@ -44,9 +44,9 @@ API de Conversão de Moedas: `Link Building`
 Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga as etapas abaixo:
 
 Fork este repositório.
-<p>Crie uma branch para a sua contribuição<p>: git checkout -b minha-contribuicao.
-<p>Faça as alterações desejadas e faça commit das mesmas<p>: git commit -m 'Minha contribuição'.
-<p>Envie as alterações para o repositório remoto<p>: git push origin minha-contribuicao.
+<p>Crie uma branch para a sua contribuição: git checkout -b minha-contribuicao.<p>
+<p>Faça as alterações desejadas e faça commit das mesmas: git commit -m 'Minha contribuição'.<p>
+<p>Envie as alterações para o repositório remoto: git push origin minha-contribuicao.<p>
 Abra um pull request no repositório original.
 
 Licença
