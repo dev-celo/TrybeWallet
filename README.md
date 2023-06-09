@@ -31,11 +31,11 @@ http://localhost:3000
 
 <p>🛠️ Construído com<p>
 
-<p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p<p>>
-<p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p<p>>
-<p>React Router: Uma biblioteca para gerenciamento de rotas em aplicações React.<p<p>>
-Styled Components: Uma biblioteca para estilizar componentes React com <p<p>>CSS-in-JS.<p<p>>
-<p>Axios: Uma biblioteca para fazer requisições HTTP.<p<p>>
+<p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p>
+<p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p>
+<p>React Router: Uma biblioteca para gerenciamento de rotas em aplicações React.<p>
+Styled Components: Uma biblioteca para estilizar componentes React com CSS-in-JS.<p>
+<p>Axios: Uma biblioteca para fazer requisições HTTP.<p>
 
 
 API de Conversão de Moedas: `Link Building`
@@ -44,9 +44,9 @@ API de Conversão de Moedas: `Link Building`
 Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga as etapas abaixo:
 
 Fork este repositório.
-<p>Crie uma branch para a sua contribuição<p>: git checkout -b minha-contribuicao.
-<p>Faça as alterações desejadas e faça commit das mesmas<p>: git commit -m 'Minha contribuição'.
-<p>Envie as alterações para o repositório remoto<p>: git push origin minha-contribuicao.
+<p>Crie uma branch para a sua contribuição: git checkout -b minha-contribuicao.<p>
+<p>Faça as alterações desejadas e faça commit das mesmas: git commit -m 'Minha contribuição'.<p>
+<p>Envie as alterações para o repositório remoto: git push origin minha-contribuicao.<p>
 Abra um pull request no repositório original.
 
 Licença
