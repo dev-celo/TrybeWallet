@@ -1,13 +1,24 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './header.css';
+import Logo from '../assets/logo.png';
 
 class Header extends Component {
   render() {
     const { email, expenses } = this.props;
     return (
-      <header>
-        <span data-testid="email-field">{email}</span>
+      <header
+        className="
+        d-flex
+        justify-content-around
+        align-items-center
+        p-3
+        background-color
+        header"
+      >
+        <img className="logo" src={ Logo } alt="Logo trybewallets" />
+        <div data-testid="email-field">{email}</div>
         <div>
           <span data-testid="total-field">
             {

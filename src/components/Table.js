@@ -8,7 +8,12 @@ class Table extends Component {
     const { expenses, dispatch } = this.props;
 
     return (
-      <div>
+      <div
+        className="
+      background-color
+      header
+      "
+      >
         <table>
           <thead>
             <tr>
