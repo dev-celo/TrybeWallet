@@ -3,13 +3,13 @@
 ## TrybeWallet é um projeto de uma carteira virtual desenvolvida como parte do currículo do curso de desenvolvimento web da Trybe. Esta aplicação permite que os usuários acompanhem suas transações financeiras e mantenham um registro de seus gastos e ganhos.
 
 ### Funcionalidades
-`Registro de transações`: Os usuários podem adicionar suas transações financeiras, especificando o tipo (entrada ou saída), a descrição e o valor.
+<p>Registro de transações: Os usuários podem adicionar suas transações financeiras, especificando o tipo (entrada ou saída), a descrição e o valor.<p>
 
-`Saldo atual`: A aplicação calcula o saldo atual com base nas transações registradas.
+<p>Saldo atual: A aplicação calcula o saldo atual com base nas transações registradas.<p>
 
-`Histórico de transações`: Os usuários podem visualizar o histórico completo de todas as transações registradas.
+<p>Histórico de transações: Os usuários podem visualizar o histórico completo de todas as transações registradas.<p>
 
-`Conversão de moedas`: A TrybeWallet possui uma funcionalidade que permite converter valores entre diferentes moedas. As taxas de câmbio são obtidas de uma API externa.
+<p>Conversão de moedas: A TrybeWallet possui uma funcionalidade que permite converter valores entre diferentes moedas. As taxas de câmbio são obtidas de uma API externa.<p>
 
 ### Como usar
 `📋 Clone este repositório para o seu computador`:
@@ -31,14 +31,14 @@ http://localhost:3000
 
 `🛠️ Construído com`
 
-`React`: Uma biblioteca JavaScript para criar interfaces de usuário.
-`Redux`: Uma biblioteca de gerenciamento de estado para JavaScript.
-`React` Router: Uma biblioteca para gerenciamento de rotas em aplicações React.
-Styled Components: Uma biblioteca para estilizar componentes React com CSS-in-JS.
-`Axios`: Uma biblioteca para fazer requisições HTTP.
+<p>React: Uma biblioteca JavaScript para criar interfaces de usuário.<p<p>>
+<p>Redux: Uma biblioteca de gerenciamento de estado para JavaScript.<p<p>>
+<p>React Router: Uma biblioteca para gerenciamento de rotas em aplicações React.<p<p>>
+Styled Components: Uma biblioteca para estilizar componentes React com <p<p>>CSS-in-JS.<p<p>>
+<p>Axios: Uma biblioteca para fazer requisições HTTP.<p<p>>
 
 
-API de Conversão de Moedas: `Build`
+API de Conversão de Moedas: `Link Building`
 
 🖇️ Colaborando
 Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga as etapas abaixo:
@@ -56,7 +56,9 @@ Este projeto está licenciado sob a MIT License.
 Se você tiver alguma dúvida ou sugestão, entre em contato com o desenvolvedor:
 
 Nome: Marcelo Silva
-Email: seuemail@example.com
+Email: marcelohenrique.backend@gmail.com
+github: https://github.com/dev-celo
+linkedin: https://www.linkedin.com/in/devcelo/
 
 ### Agradecimentos
 Gostaríamos de expressar minha profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
