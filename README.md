@@ -12,22 +12,22 @@
 <p>Conversão de moedas: A TrybeWallet possui uma funcionalidade que permite converter valores entre diferentes moedas. As taxas de câmbio são obtidas de uma API externa.<p>
 
 ### Como usar
-<p>📋 Clone este repositório para o seu computador<p>:
-git clone https://github.com/dev-celo/TrybeWallet.git
+<p>📋 Clone este repositório para o seu computador:
+git clone https://github.com/dev-celo/TrybeWallet.git<p>
 
-<p>Acesse o diretório do projeto<p>:
-cd TrybeWallet
+<p>Acesse o diretório do projeto:
+cd TrybeWallet<p>
 
 <p>🔧 Instale as dependências do projeto<p>:
 npm install
 
-<p>Inicie a aplicação<p>:
+<p>Inicie a aplicação:
 
-npm start
+npm start<p>
 
-<p>Abra seu navegador e acesse o endereço<p>:
+<p>Abra seu navegador e acesse o endereço:
 
-http://localhost:3000
+http://localhost:3000<p>
 
 <p>🛠️ Construído com<p>
 
