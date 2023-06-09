@@ -59,14 +59,6 @@ Nome: Marcelo Silva
 Email: seuemail@example.com
 
 ### Agradecimentos
-Gostaríamos de expressar nossa profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
-
-Agradecemos especialmente a:
-
-Nome da pessoa instrutora 1: Por compartilhar seus conhecimentos e por sua dedicação em nos ensinar os conceitos fundamentais durante todo o curso.
-
-Nome da pessoa instrutora 2: Por fornecer orientações valiosas e feedback construtivo para o desenvolvimento deste projeto. Sua experiência e insights foram inestimáveis.
-
-Nome da pessoa colaboradora 1: Por suas contribuições significativas para a implementação e aprimoramento da TrybeWallet. Seu trabalho árduo e dedicação foram essenciais para o sucesso do projeto.
+Gostaríamos de expressar minha profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
 
 Agradeço também a todos o colegas de tribo, que estiveram envolvidos neste projeto, compartilhando dificuldades, dúvidas e soluções. O trabalho e o apoio mútuo foram fundamentais para superar desafios e alcançar nossos objetivos.
