@@ -7,6 +7,11 @@ import Logo from '../assets/logo.png';
 class Header extends Component {
   render() {
     const { email, expenses } = this.props;
+
+    const space = {
+      'margin-right': '10px',
+    };
+
     return (
       <header
         className="
@@ -21,11 +26,12 @@ class Header extends Component {
         <div data-testid="email-field">{email}</div>
         <div>
           <span data-testid="total-field">
+            <span style={ space }>Gastos</span>
             {
               expenses.length > 0
                 ? (expenses.reduce((acc, expense) => acc + (Number(expense.value)
                 * expense.exchangeRates[expense.currency].ask), 0).toFixed(2))
-                : '0.00'
+                : 'Gastos 0.00'
             }
           </span>
           <span data-testid="header-currency-field">BRL</span>
