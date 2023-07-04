@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import { fetchCurrency, submitprofessionalProfie } from '../redux/actions';
 import './wallet.css';
 
@@ -20,6 +21,11 @@ class WalletForm extends Component {
 
   render() {
     const { currencies, dispatch } = this.props;
+
+    if (currencies.length === 0) {
+      return <Redirect to="/" />;
+    }
+
     const {
       value,
       description,
