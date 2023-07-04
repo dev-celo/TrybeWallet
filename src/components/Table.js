@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteCoast } from '../redux/actions';
+import './table.css';
 
 class Table extends Component {
   render() {
@@ -11,11 +12,10 @@ class Table extends Component {
       <div
         className="
       background-color
-      header
       "
       >
         <table>
-          <thead>
+          <thead className="header-table">
             <tr>
               <th>Descrição</th>
               <th>Tag</th>
