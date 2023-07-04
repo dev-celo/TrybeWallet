@@ -2,15 +2,20 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteCoast } from '../redux/actions';
+import './table.css';
 
 class Table extends Component {
   render() {
     const { expenses, dispatch } = this.props;
 
     return (
-      <div>
+      <div
+        className="
+      background-color
+      "
+      >
         <table>
-          <thead>
+          <thead className="header-table">
             <tr>
               <th>Descrição</th>
               <th>Tag</th>
