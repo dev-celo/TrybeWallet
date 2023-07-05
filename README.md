@@ -61,6 +61,6 @@ Se você tiver alguma dúvida ou sugestão, entre em contato com o desenvolvedor
 <p>linkedin: https://www.linkedin.com/in/devcelo/<p>
 
 ### Agradecimentos
-Gostaríamos de expressar minha profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
+Gostaría de expressar minha profunda gratidão a todas as pessoas instrutoras e colaboradoras da Trybe que estiveram envolvidas neste projeto. Seu conhecimento, orientação e suporte foram fundamentais para o nosso aprendizado e para o desenvolvimento desta aplicação.
 
 Agradeço também a todos o colegas de tribo, que estiveram envolvidos neste projeto, compartilhando dificuldades, dúvidas e soluções. O trabalho e o apoio mútuo foram fundamentais para superar desafios e alcançar nossos objetivos.

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { AiOutlineMail } from 'react-icons/ai';
 import { MdPassword } from 'react-icons/md';
 import { fetchCurrency, submitPersonalProfie } from '../redux/actions';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-principal.png';
 
 class Login extends React.Component {
   constructor() {

@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import { fetchCurrency, submitprofessionalProfie } from '../redux/actions';
+import './wallet.css';
 
 class WalletForm extends Component {
   state = {
@@ -19,6 +21,11 @@ class WalletForm extends Component {
 
   render() {
     const { currencies, dispatch } = this.props;
+
+    if (currencies.length === 0) {
+      return <Redirect to="/" />;
+    }
+
     const {
       value,
       description,
@@ -28,8 +35,20 @@ class WalletForm extends Component {
     } = this.state;
 
     return (
-      <form>
+      <form
+        className="
+        d-flex
+        flex-column
+        background-color
+        header
+        justify-content-center
+        align-items-center
+        gap-3
+        p-5"
+      >
         <input
+          placeholder="Digite o valor"
+          className="input"
           onChange={ this.handleChange }
           data-testid="value-input"
           type="number"
@@ -37,6 +56,7 @@ class WalletForm extends Component {
           id="value"
         />
         <input
+          className="input"
           onChange={ this.handleChange }
           data-testid="description-input"
           type="text"
@@ -84,6 +104,7 @@ class WalletForm extends Component {
         </select>
 
         <button
+          className="btn btn-primary w-25"
           onClick={ (event) => {
             event.preventDefault();
             dispatch(submitprofessionalProfie(
