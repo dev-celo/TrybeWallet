@@ -16,7 +16,7 @@ jobs:
           node-version: '14.x'
       - name: Configure Git identity
         run: |
-          git config --global user.email "marcelohenrique.backend@gmail.commarcelohenrique.backend@gmail.com"
+          git config --global user.email "marcelohenrique.backend@gmail.com"
           git config --global user.name "dev-celo"
       - name: Install dependencies
         run: npm ci
@@ -24,3 +24,4 @@ jobs:
         run: npm run build
       - name: Deploy
         run: npm run deploy
+        
