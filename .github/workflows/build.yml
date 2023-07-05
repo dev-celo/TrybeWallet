@@ -17,7 +17,7 @@ jobs:
       - name: Configure Git identity
         run: |
           git config --global user.email "marcelohenrique.backend@gmail.com"
-          git config --global user.name "dev-celo"
+          git config --global user.name "marcelo"
       - name: Install dependencies
         run: npm ci
       - name: Build web-app
