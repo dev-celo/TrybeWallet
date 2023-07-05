@@ -2,7 +2,7 @@
   "name": "sd-0x-project-trybewallet",
   "version": "1.0.0",
   "private": true,
-  "homepage": "TrybeWallet/",
+  "homepage": "./src/",
   "engines": {
     "node": "16 || 18"
   },
