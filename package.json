@@ -25,7 +25,7 @@
     "stylelint-order": "5.0.0"
   },
   "scripts": {
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "cy": "env CY_CLI=true cypress run",
     "cy:open": "cypress open --e2e --browser chrome",
