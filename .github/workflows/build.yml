@@ -1,5 +1,3 @@
-name: deploy
-
 on:
   push:
     branches:
@@ -23,5 +21,8 @@ jobs:
       - name: Build web-app
         run: npm run build
       - name: Deploy
-        run: npm run deploy
-        
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: build
+          token: ${{ secrets.GITHUB_TOKEN }}
