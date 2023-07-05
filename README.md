@@ -1,7 +1,7 @@
 
 # TrybeWallet
 
-TrybeWallet é um projeto de uma carteira virtual desenvolvida como parte do currículo do curso de desenvolvimento web da Trybe. Esta aplicação permite que os usuários acompanhem suas transações financeiras e mantenham um registro de seus gastos e ganhos. Aplicação tendo um diferencial o uso do redux em react para gerenciar o estado da aplicação
+TrybeWallet é um projeto de uma carteira virtual desenvolvida como parte do currículo do curso de desenvolvimento web da Trybe. Esta aplicação permite que os usuários acompanhem suas transações financeiras e mantenham um registro de seus gastos. Aplicação tendo um diferencial o uso do redux em react para gerenciar o estado da aplicação
 ## Funcionalidades
 
 - Registro de transações: Os usuários podem adicionar suas transações financeiras, especificando o tipo (entrada ou saída), a descrição e o valor.
