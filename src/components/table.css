@@ -5,6 +5,20 @@
   text-align: center;
 }
 
+.background-color {
+  background-color: #222729;
+  background-image: url('../assets/textura.png');
+}
+
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+table.table {
+
+  --bs-table-color: white;
+
+  --bs-table-bg: #222729;
+}
+
 table {
   border-collapse: collapse;
   padding-top: 20px;
@@ -15,6 +29,7 @@ thead tr th , tbody tr td {
   border-bottom: 1px solid #ccc;
   padding: 10px;
   text-align: left;
+  width: 100%;
 }
 
 table tbody tr td {
@@ -22,7 +37,6 @@ table tbody tr td {
 }
 
 table thead th {
-  background-color: #f8f9fa;
   border-bottom: 2px solid #007bff;
   border-collapse: collapse;
   border-top: 2px solid #007bff;
@@ -44,4 +58,26 @@ td button {
 
 td button:hover {
   background-color: #c82333;
+}
+
+
+@media ( max-width : 767px ) {
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table-responsive table {
+    display: table;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
 }

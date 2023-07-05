@@ -11,28 +11,29 @@ class Table extends Component {
     return (
       <div
         className="
-      background-color
+        table-responsive-md
+        background-color
       "
       >
-        <table>
+        <table className="table">
           <thead className="header-table">
             <tr>
-              <th>Descrição</th>
-              <th>Tag</th>
-              <th>Método de pagamento</th>
-              <th>Valor</th>
-              <th>Moeda</th>
-              <th>Câmbio utilizado</th>
-              <th>Valor convertido</th>
-              <th>Moeda de conversão</th>
-              <th>Editar/Excluir</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Gastou com</th>
+              <th scope="col">Método de pagamento</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Moeda</th>
+              <th scope="col">Câmbio utilizado</th>
+              <th scope="col">Valor convertido</th>
+              <th scope="col">Moeda de conversão</th>
+              <th scope="col">Editar/Excluir</th>
             </tr>
           </thead>
           <tbody>
             {
               expenses
               && expenses.map((expense) => (
-                <tr key={ expense.id }>
+                <tr className="background-color" key={ expense.id }>
                   <td>{ expense.description }</td>
                   <td>{ expense.tag }</td>
                   <td>{ expense.method }</td>
@@ -48,7 +49,6 @@ class Table extends Component {
                   <td>Real</td>
                   <td>
                     <button
-                      /* id={ `button-${expense.id}` } */
                       data-testid="delete-btn"
                       onClick={ () => {
                         dispatch(deleteCoast(expense.id));

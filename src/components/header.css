@@ -6,3 +6,11 @@
 .header {
   color: white;
 }
+
+@media ( max-width : 767px ) {
+
+  .header {
+    align-items: center;
+    flex-direction: column;
+  }
+}
