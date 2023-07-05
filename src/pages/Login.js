@@ -55,13 +55,13 @@ class Login extends React.Component {
           flex-column
           justify-content-center
           align-item-center
-          mx-auto w-50
+          mx-auto width-75
           border-top-0
           background-login
           glass
           "
         >
-          <div className="w-75 d-flex flex-row align-items-center mb-3 mx-auto">
+          <div className="width-75 d-flex flex-row align-items-center mb-3 mx-auto">
             <input
               className="p-1 rounded w-100"
               onChange={ this.handleChange }
@@ -75,7 +75,7 @@ class Login extends React.Component {
             />
             <AiOutlineMail className="emailIcon" />
           </div>
-          <div className="w-75 d-flex flex-row align-items-center mb-5 mx-auto">
+          <div className="width-75 d-flex flex-row align-items-center mb-5 mx-auto">
             <input
               className="p-1 rounded w-100"
               onChange={ this.handleChange }
