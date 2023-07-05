@@ -14,6 +14,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
+      - name: Configure Git identity
+        run: |
+          git config --global user.email "marcelohenrique.backend@gmail.commarcelohenrique.backend@gmail.com"
+          git config --global user.name "dev-celo"
       - name: Install dependencies
         run: npm ci
       - name: Build web-app
