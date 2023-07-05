@@ -16,11 +16,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 ReactDOM
   .createRoot(document.getElementById('root'))
   .render(
-    <HashRouter>
-      <Provider store={ store }>
-        <App />
-      </Provider>
-    </HashRouter>,
+    <React.StrictMode>
+      <HashRouter>
+        <Provider store={ store }>
+          <App />
+        </Provider>
+      </HashRouter>
+    </React.StrictMode>,
   );
 
 // If you want your app to work offline and load faster, you can change
